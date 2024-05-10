@@ -1,0 +1,29 @@
+.hero-section {
+
+    &__text-holder {
+        width: 555px;
+    }
+
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1.4;
+        
+        &_bold {
+            font-weight: 700;
+        }
+
+    }
+
+    &__text {
+        margin-bottom: 50px;
+        color: var(--grey);
+        line-height: 1.8;
+
+        &_bold {
+            font-weight: 500;
+        }
+    }
+}

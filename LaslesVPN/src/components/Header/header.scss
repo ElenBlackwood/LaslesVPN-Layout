@@ -1,0 +1,25 @@
+.header {
+    padding: 50px 0;
+    margin-bottom: 100px;
+
+    
+
+    .nav {
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        &__item {
+            color: var(--grey);
+        }
+    }
+
+    &__btn-holder {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
