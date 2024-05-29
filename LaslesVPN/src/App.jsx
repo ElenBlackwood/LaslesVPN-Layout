@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
+import Info from "./components/Info/Info"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Header />
       <Hero />
+      {/* <Info /> */}
     </div>
   )
 }
