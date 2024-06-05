@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="hero-section__text-holder">
                 <h1 className="hero-section__title">Want anything to be easy with <span className="hero-section__title_bold">LaslesVPN</span>.</h1>
                 <div className="hero-section__text">
-                    <p>Provide a network for all your needs with ease and fun using <span className="hero-section__text_bold">LaslesVPN</span> discover interesting features from us.</p>
+                    <p>Provide a network for all your needs with ease and fun using <span className="text-bold">LaslesVPN</span> discover interesting features from us.</p>
                 </div>
                 <button className="bg-btn">Get Started</button>
 

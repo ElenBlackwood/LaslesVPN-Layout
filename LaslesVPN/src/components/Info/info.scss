@@ -1,0 +1,44 @@
+.info {
+
+    .block {
+        padding: 73px 90px;
+        display: flex;
+        justify-content: space-between;
+
+        &__icon i {
+            display: block;
+            width: 55px;
+            height: 55px;
+        }
+
+        &__content {                
+            display: flex;
+            justify-content: space-between;
+        }
+
+        // &__content > &__content::before {
+        //     content: '';
+        //     background-color: black;
+        //     height: 10px;
+        //     width: 2px;
+
+        // }
+
+        &__text-holder {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__text-amount {
+            font-size: 25px;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        &__text {
+            font-size: 20px;
+            color: var(--grey);
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.plan {
+    padding-top: 80px;
+    margin-bottom: 150px;
+    text-align: center;
+
+
+    &__desc-holder {
+        margin-bottom: 60px;
+    }
+
+    &__plans-holder {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__select-plan {
+        padding: 80px 70px 50px;
+        display: grid;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        // max-width: 330px;
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+            border-color: var(--red);
+        }
+
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__packname {
+        margin-bottom: 30px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--black);
+    }
+
+    &__list {
+        margin-bottom: 130px;
+    }
+
+    &__benefit {
+        padding-left: 25px;
+        position: relative;
+        font-size: 14px;
+        line-height: 2.1;
+        text-align: left;
+        color: var(--grey);
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 10px;
+            left: 0px;
+            width: 2px;
+            height: 10px;
+            transform: rotate(-56deg);
+            background-color: var(--green);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 6px;
+            left: 8px;
+            width: 2px;
+            height: 14px;
+            background-color: var(--green);
+            transform: rotate(45deg);
+        }
+    }
+
+    &__price {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--black);
+    }
+
+
+}

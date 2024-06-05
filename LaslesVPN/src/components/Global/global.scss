@@ -1,0 +1,13 @@
+.global {
+    margin-bottom: 50px;
+    text-align: center;
+
+    &__img > &__img {
+        margin-bottom: 35px;
+    }
+
+    &__desc-holder {
+        margin-bottom: 155px;
+    }
+
+}
