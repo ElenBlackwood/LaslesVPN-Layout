@@ -5,6 +5,7 @@ import Info from "./components/Info/Info"
 import Features from "./components/Features/Features.jsx"
 import Plan from "./components/Plan/Plan.jsx"
 import Global from "./components/Global/Global.jsx"
+import Reviews from "./Reviews/Reviews.jsx"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Features />
       <Plan />
       <Global />
+      <Reviews />
     </div>
   )
 }
