@@ -14,7 +14,7 @@ function App() {
     <div>
       <Header />
       <Hero />
-      {/* <Info /> */}
+      <Info />
       <Features />
       <Plan />
       <Global />
