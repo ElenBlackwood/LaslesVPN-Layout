@@ -1,0 +1,51 @@
+.footer {
+    padding: 180px 0 100px;
+    background-color: var(--bg);
+
+    .logo-holder {
+        &__desc {
+            margin-bottom: 30px;
+            max-width: 340px;
+        }
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+
+        &__social-icons {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        &__copy {
+            color: #AFB5C0;
+
+        }
+        
+    }
+
+    .nav {
+        display: flex;
+        gap: 126px;
+
+        &__list-item > &__list-item {
+            margin-bottom: 10px;
+        }
+
+        &__list-item {
+            color: var(--grey);
+
+            &_bold {
+                font-weight: 500;
+                color: var(--black);
+                
+            }
+        }
+    }
+
+    
+
+
+
+}

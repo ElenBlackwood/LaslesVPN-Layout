@@ -23,7 +23,7 @@ export default function Reviews() {
                         </div>
                         <div className="review__customer-star">
                                 <span>4.5</span>
-                                <span>STAR ICON</span>
+                                <i class="icon-star"></i>
                         </div>
                     </div>
                     <div className="review__text-holder">

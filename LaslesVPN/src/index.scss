@@ -24,6 +24,7 @@ body {
     font-style: normal;
     background-color: var(--white);
     font-size: 16px;
+    line-height: 1.9;
 }
   
 a, a:visited, a:hover {
@@ -109,13 +110,26 @@ legend {
 }
 
 .bg-btn {
-    padding: 18px 78px;
-    width: 250px;
+    padding: 18px 65px;
+    max-width: 250px;
+    height: 100%;
     border-radius: 10px;    
     background-color: var(--red);
     color: var(--white);
     font-weight: 700;    
     box-shadow: 0 25px 20px -10px rgba(245, 56, 56, 0.35);
+}
+
+.link {
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+        color:var(--red);
+    }
+
+    &:active {
+        color: #ac2f2f;
+    }
 }
 
 .subtitle {

@@ -1,9 +1,25 @@
 .info {
+    position: relative; 
+
+    
 
     .block {
-        padding: 73px 90px;
+        padding: 37px 90px;
+        position: absolute;
+        top: -130px;
+        left: 80px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        max-width: 1140px;
+        width: 100%;
+        border-radius: 10px;        
+        background-color: var(--white);
+        box-shadow: 0 20px 25px -20px rgba(13, 16, 33, 0.35);
+
+        &__desc {
+            max-width: 370px;
+        }
 
         &__icon i {
             display: block;
@@ -11,18 +27,21 @@
             height: 55px;
         }
 
+        &__content {
+
+            &::after {
+                content: '';
+                display: block;
+                color: red;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
         &__content {                
             display: flex;
             justify-content: space-between;
         }
-
-        // &__content > &__content::before {
-        //     content: '';
-        //     background-color: black;
-        //     height: 10px;
-        //     width: 2px;
-
-        // }
 
         &__text-holder {
             display: flex;

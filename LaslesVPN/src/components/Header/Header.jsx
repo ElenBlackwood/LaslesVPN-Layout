@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import Logo from '../../assets/img/logo.jpg'
+import Logo from '../../assets/img/logo.jpg';
 
 export default function Header() {
     return (
@@ -11,11 +11,11 @@ export default function Header() {
                 </div>
                 <nav className="nav">
                     <ul className="nav__list">
-                        <li className="nav__item"><a href="!#" className="nav__link">About</a></li>
-                        <li className="nav__item"><a href="!#" className="nav__link">Features</a></li>
-                        <li className="nav__item"><a href="!#" className="nav__link">Pricing</a></li>
-                        <li className="nav__item"><a href="!#" className="nav__link">Testimonials</a></li>
-                        <li className="nav__item"><a href="!#" className="nav__link">Help</a></li>
+                        <li className="nav__item"><a href="!#" className="link">About</a></li>
+                        <li className="nav__item"><a href="!#" className="link">Features</a></li>
+                        <li className="nav__item"><a href="!#" className="link">Pricing</a></li>
+                        <li className="nav__item"><a href="!#" className="link">Testimonials</a></li>
+                        <li className="nav__item"><a href="!#" className="link">Help</a></li>
                     </ul>
                 </nav>
                 <div className="header__btn-holder">
