@@ -1,4 +1,3 @@
-import Feature from "./components/Features/Features.jsx" // component check
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import Info from "./components/Info/Info"
@@ -27,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

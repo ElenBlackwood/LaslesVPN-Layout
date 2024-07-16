@@ -8,7 +8,7 @@ export default function Info() {
           <div className="block">
             <div className="block__content">
               <div className="block__icon">
-                <i class="icon-user"><span class="path1"></span><span class="path2"></span></i>
+                <i className="icon-user"><span className="path1"></span><span className="path2"></span></i>
               </div>
               <div className="block__text-holder">
                 <span className="block__text-amount">90+</span>
@@ -17,7 +17,7 @@ export default function Info() {
             </div>  
             <div className="block__content">
               <div className="block__icon">
-                <i class="icon-user"><span class="path1"></span><span class="path2"></span></i>
+                <i className="icon-user"><span className="path1"></span><span className="path2"></span></i>
               </div>
               <div className="block__text-holder">
                 <span className="block__text-amount">90+</span>
@@ -26,7 +26,7 @@ export default function Info() {
             </div>  
             <div className="block__content">
               <div className="block__icon">
-                <i class="icon-user"><span class="path1"></span><span class="path2"></span></i>
+                <i className="icon-user"><span className="path1"></span><span className="path2"></span></i>
               </div>
               <div className="block__text-holder">
                 <span className="block__text-amount">90+</span>
