@@ -10,8 +10,7 @@ export default function Reviews() {
                 <h2 className="subtitle">Trusted by Thousands of Happy Customer</h2>
                 <span className="text-desc">See LaslesVPN everywhere to make it easier for you when you move locations.</span>
             </div>
-            <Carousel />
-                
+            <Carousel />   
         </div>
     </section>
   );

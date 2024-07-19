@@ -1,13 +1,13 @@
 .info {
     position: relative; 
-
+    max-height: 100vh;
     
-
     .block {
         padding: 37px 90px;
         position: absolute;
-        top: -130px;
-        left: 80px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         justify-content: space-between;
         align-items: center;

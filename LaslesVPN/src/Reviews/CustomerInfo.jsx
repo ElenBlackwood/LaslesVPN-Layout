@@ -3,7 +3,7 @@ import './reviews.scss';
 
 export default function Info (props) {
      return (
-          <div className="review">
+          <div className={`review ${props.isActive ? 'active' : ''}`}>
                <div className="review__customer">
                     <div className="review__customer-info">
                          <div className="review__customer-img">
