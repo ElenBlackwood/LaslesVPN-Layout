@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import './mixins';
 
 :root {
     --grey: #4F5665;
@@ -6,9 +7,7 @@
     --white: #FFFFFF;
     --red: #F53838;
     --green: #2FAB73;
-
     --bg: #F8F8F8;
-
 }
 
 *, *::before, *::after {
@@ -25,6 +24,10 @@ body {
     background-color: var(--white);
     font-size: 16px;
     line-height: 1.9;
+
+    @include breakpoint ('lg') {
+        font-size: 14px;
+    }
 }
   
 a, a:visited, a:hover {
@@ -53,7 +56,7 @@ ul {
 img, svg, video {
     display: inline-block;
     vertical-align: top;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -88,36 +91,107 @@ legend {
     display: block;
 }
 
+// .logo {
+//     max-width: 150px;
+//     width: 100%;
+// }
+
 .container {
     width: 100%;
     max-width: 1275px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    padding: 0 80px;
+
+    &_hero {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include breakpoint ('lg') {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+    }
+
+    
 }
 
 .flex-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 150px;
+
+    @include breakpoint ('xxl') {
+        gap: 90px;
+    }
+
+    @include breakpoint('xl') {
+        gap: 25px;
+    }
+
+    @include breakpoint ('lg') {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
 }
 
 .btn {
     padding: 13px 45px;
     width: 150px;
     height: 45px;
-    border: 1px solid var(--red);
+    color: var(--black);
     border-radius: 50px;
-    color: var(--red);
+    transition: ease-in-out 0.3s;
+
+    &_def {
+        color: var(--red);
+        border: 2px solid var(--red);
+
+        &:hover {
+            background-color: var(--red);
+            color: var(--white);
+            border: none;
+        }
+    }
+
+    &:hover {
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        color: var(--red);
+    }
+
+    &:active {
+        color: #7b2222;
+        border: 1px solid #7b2222;
+
+    }
+
+    @include breakpoint ('lg') {
+        width: 120px;
+        padding: 6px 14px;
+        margin: 0 auto;
+    }
+
 }
 
 .bg-btn {
     padding: 18px 65px;
-    max-width: 250px;
+    max-width: 255px;
     height: 100%;
     border-radius: 10px;    
     background-color: var(--red);
     color: var(--white);
     font-weight: 700;    
     box-shadow: 0 25px 20px -10px rgba(245, 56, 56, 0.35);
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+        color: var(--red);
+        background-color: white;
+        border: 1px solid var(--red);
+    }
+
+    
 }
 
 .link {
@@ -137,7 +211,12 @@ legend {
     font-weight: 500;
     line-height: 1.4;
     color: var(--black); 
-    margin-bottom: 20px;       
+    margin-bottom: 20px;   
+    
+    @include breakpoint ('lg') {
+        font-size: 24px;
+        text-align: center;
+    }
 }
 
 .text-desc {

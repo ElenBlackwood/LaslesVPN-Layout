@@ -1,9 +1,11 @@
+@import '../../mixins.scss';
+
 .features {
     padding: 175px 0  132px;
 
 
     &__text-holder {
-        max-width: 430px;
+        // max-width: 430px;
     }
 
     &__list-item {

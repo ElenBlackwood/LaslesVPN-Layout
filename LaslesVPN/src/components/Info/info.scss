@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .info {
     position: relative; 
     max-height: 100vh;
@@ -17,30 +19,36 @@
         background-color: var(--white);
         box-shadow: 0 20px 25px -20px rgba(13, 16, 33, 0.35);
 
+        @include breakpoint ('xl') {
+            max-width: 1000px;
+            padding: 25px 75px;
+        }
+
+        @include breakpoint ('lg') {
+            max-width: 800px;
+            padding: 25px;
+        }
+
         &__desc {
             max-width: 370px;
         }
 
-        &__icon i {
-            display: block;
-            width: 55px;
-            height: 55px;
-        }
+        // &__icon i {
+        //     display: block;
+        //     width: 55px;
+        //     height: 55px;
+        // }
 
-        &__content {
-
-            &::after {
-                content: '';
-                display: block;
-                color: red;
-                width: 100px;
-                height: 100px;
-            }
-        }
+        
 
         &__content {                
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            gap: 35px;
+
+            @include breakpoint ('lg') {
+                gap: 15px;
+            }
         }
 
         &__text-holder {
@@ -53,11 +61,20 @@
             font-size: 25px;
             font-weight: 700;
             color: var(--black);
+
+            @include breakpoint ('lg') {
+                font-size: 18px;
+                font-weight: 600;
+            }
         }
 
         &__text {
             font-size: 20px;
             color: var(--grey);
+
+            @include breakpoint ('lg') {
+                font-size: 16px;
+            }
         }
     }
 }

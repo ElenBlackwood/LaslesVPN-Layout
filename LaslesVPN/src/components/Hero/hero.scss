@@ -1,9 +1,14 @@
+@import '../../mixins.scss';
+
 .hero-section {
     padding-bottom: 175px;
 
 
     &__text-holder {
         width: 555px;
+        @include breakpoint ('lg') {
+            text-align: center;
+        }
     }
 
 

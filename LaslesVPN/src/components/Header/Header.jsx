@@ -7,7 +7,7 @@ export default function Header() {
         <header className="header">
             <div className="container flex-container">
                 <div className="header__logo">
-                    <img src={Logo} alt="logo image" />
+                    <img className="logo" src={Logo} alt="logo image" />
                 </div>
                 <nav className="nav">
                     <ul className="nav__list">

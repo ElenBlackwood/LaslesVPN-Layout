@@ -19,6 +19,8 @@ i {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  font-size: 55px;
+
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -28,11 +30,13 @@ i {
 .icon-facebook .path1:before {
   content: "\e900";
   color: rgb(245, 56, 56);
+
 }
 .icon-facebook .path2:before {
   content: "\e901";
   margin-left: -0.986328125em;
   color: rgb(255, 255, 255);
+
 }
 .icon-instagram .path1:before {
   content: "\e902";

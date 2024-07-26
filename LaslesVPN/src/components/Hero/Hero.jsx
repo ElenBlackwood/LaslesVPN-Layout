@@ -5,7 +5,7 @@ import HeroImg from '../../assets/img/hero-img.jpg';
 export default function Hero() {
   return (
     <section className="hero-section">
-        <div className="container flex-container">
+        <div className="container container_hero">
             <div className="hero-section__text-holder">
                 <h1 className="hero-section__title">Want anything to be easy with <span className="hero-section__title_bold">LaslesVPN</span>.</h1>
                 <div className="hero-section__text">

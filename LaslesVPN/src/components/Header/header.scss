@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .header {
     padding: 50px 0;
     margin-bottom: 100px;
@@ -10,6 +12,10 @@
             display: flex;
             justify-content: space-between;
             gap: 40px;
+
+            @include breakpoint('xl') {
+                gap: 20px;
+            }
         }
 
         &__item {
@@ -20,6 +26,5 @@
     &__btn-holder {
         display: flex;
         justify-content: space-between;
-        gap: 30px;
     }
 }

@@ -17,20 +17,20 @@ export default function Info() {
             </div>  
             <div className="block__content">
               <div className="block__icon">
-                <i className="icon-user"><span className="path1"></span><span className="path2"></span></i>
+              <i className="icon-location"><span className="path1"></span><span className="path2"></span></i>
               </div>
               <div className="block__text-holder">
-                <span className="block__text-amount">90+</span>
-                <span className="block__text">Users</span>
+                <span className="block__text-amount">30+</span>
+                <span className="block__text">Locations</span>
               </div>
             </div>  
             <div className="block__content">
               <div className="block__icon">
-                <i className="icon-user"><span className="path1"></span><span className="path2"></span></i>
+              <i className="icon-server"><span className="path1"></span><span className="path2"></span></i>
               </div>
               <div className="block__text-holder">
-                <span className="block__text-amount">90+</span>
-                <span className="block__text">Users</span>
+                <span className="block__text-amount">50+</span>
+                <span className="block__text">Servers</span>
               </div>
             </div>            
         </div>            

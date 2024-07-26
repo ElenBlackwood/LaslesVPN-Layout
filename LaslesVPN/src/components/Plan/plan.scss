@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .plan {
     padding-top: 80px;
     margin-bottom: 150px;
@@ -10,8 +12,19 @@
 
     &__plans-holder {
         display: flex;
-        justify-content: space-between;
         gap: 50px;
+
+        @include breakpoint ('xl') {
+            gap: 25px;
+        }
+
+        @include breakpoint ('md') {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        
     }
 
     &__select-plan {
@@ -19,11 +32,18 @@
         display: grid;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
-        // max-width: 330px;
         transition: ease-in-out 0.3s;
 
         &:hover {
             border-color: var(--red);
+        }
+
+        @include breakpoint ('lg') {
+            padding: 50px 40px 25px;
+        }
+
+        @include breakpoint ('sm') {
+            padding: 50px 80px;
         }
 
     }
@@ -38,6 +58,11 @@
         font-size: 18px;
         font-weight: 500;
         color: var(--black);
+
+        @include breakpoint ('md') {
+            font-size: 14px;
+
+        }
     }
 
     &__list {
@@ -74,6 +99,11 @@
             height: 14px;
             background-color: var(--green);
             transform: rotate(45deg);
+        }
+
+        @include breakpoint ('lg') {
+            font-size: 12px;
+            // line-height: 1.5;
         }
     }
 

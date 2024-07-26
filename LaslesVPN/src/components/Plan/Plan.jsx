@@ -27,10 +27,10 @@ export default function Plan() {
                         </ul>
                     </div>
                     <span className="plan__price">Free</span>
-                    <button className="btn">Select</button>
+                    <button className="btn btn_def">Select</button>
                 </div>
                 <div className="plan__select-plan">
-                    <div className="plan__img">
+                    <div className="plan__img">s
                         <img src={planImg} alt="plan image" />
                     </div>
                     <span className="plan__packname">Standard Plan</span>
@@ -44,7 +44,7 @@ export default function Plan() {
                         </ul>
                     </div>
                     <span className="plan__price">$9 / mo</span>
-                    <button className="btn">Select</button>
+                    <button className="btn btn_def">Select</button>
                 </div>
                 <div className="plan__select-plan">
                     <div className="plan__img">
@@ -62,7 +62,7 @@ export default function Plan() {
                         </ul>
                     </div>
                     <span className="plan__price">$12 / mo</span>
-                    <button className="btn">Select</button>
+                    <button className="btn btn_def">Select</button>
                 </div>
 
             </div>
