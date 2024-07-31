@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .reviews {
     padding-bottom: 175px;
 
@@ -13,6 +15,14 @@
         border-radius: 10px;
         min-height: 245px; 
         max-width: 400px;
+
+        @include breakpoint ('xl') {
+            max-width: 500px;
+        }
+
+        @include breakpoint ('md') {
+            max-width: 100%;
+        }
 
         &.active {
             border: 2px solid var(--red);
