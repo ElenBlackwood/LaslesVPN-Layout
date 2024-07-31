@@ -3,14 +3,21 @@
 .hero-section {
     padding-bottom: 175px;
 
+    @include breakpoint ('sm') {
+        padding-bottom: 220px;
+    }
 
     &__text-holder {
         width: 555px;
+
         @include breakpoint ('lg') {
             text-align: center;
         }
-    }
 
+        @include breakpoint ('md') {
+            width: 100%;
+        }
+    }
 
     &__title {
         margin-bottom: 20px;
@@ -20,6 +27,18 @@
         
         &_bold {
             font-weight: 700;
+        }
+
+        @include breakpoint ('lg') {
+            font-size: 46pxpx;
+        }
+
+        @include breakpoint ('md') {
+            font-size: 32px;
+        }
+
+        @include breakpoint ('xxs') {
+            font-size: 24pxß;
         }
 
     }

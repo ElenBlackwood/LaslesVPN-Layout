@@ -1,6 +1,20 @@
+@import '../../mixins.scss';
+
 .footer {
     padding: 180px 0 100px;
     background-color: var(--bg);
+
+    @include breakpoint ('sm') {
+        padding-bottom: 60px;
+    }
+
+    .container {
+
+        @include breakpoint ('lg') {
+            flex-direction: column-reverse;
+            gap: 65px;
+        }
+    }
 
     .logo-holder {
         &__desc {
@@ -16,10 +30,16 @@
             margin-bottom: 30px;
             display: flex;
             gap: 20px;
+
+            @include breakpoint ('md') {
+                text-align: center;
+                display: block;
+            }
         }
 
         &__copy {
             color: #AFB5C0;
+
         }
         
     }
@@ -27,6 +47,8 @@
     .nav {
         display: flex;
         gap: 126px;
+        line-height: 1.5;
+
 
         &__list-item > &__list-item {
             margin-bottom: 10px;
@@ -41,5 +63,9 @@
             }
         }
     }
+
+    
+
+
 
 }

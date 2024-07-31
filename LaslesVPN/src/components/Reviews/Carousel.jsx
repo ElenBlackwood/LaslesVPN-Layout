@@ -37,17 +37,33 @@ function NextArrow(props) {
  
  export default function Carousel() {
      const sliderRef = useRef(null);
-
      const [activeSlide, setActiveSlide] = useState(0);
  
      const settings = {
-         className: "center",
-         centerMode: true,
-         dots: false,
-         infinite: true,
-         slidesToShow: 2,
-         speed: 500,
-         arrows: false,
+        className: "center",
+        centerMode: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 2,
+        speed: 500,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: true,
+                    verticalSwiping: true,
+                    swipeToSlide: true,
+                }
+            },
+         ],
         beforeChange: (current, next) => setActiveSlide(next),
          
          

@@ -68,6 +68,8 @@ i {
 .icon-star:before {
   content: "\e908";
   color: #fea250;
+  font-size: 15px;
+  display: block;
 }
 .icon-twitter .path1:before {
   content: "\e909";

@@ -3,6 +3,14 @@
 .features {
     padding: 175px 0  132px;
 
+    @include breakpoint ('md') {
+        padding: 150px 0 90px;
+    }
+
+    @include breakpoint ('sm') {
+        padding: 220px 0 90px;
+    }
+
 
     &__text-holder {
         // max-width: 430px;

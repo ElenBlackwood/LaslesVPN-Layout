@@ -23,10 +23,13 @@ body {
     font-style: normal;
     background-color: var(--white);
     font-size: 16px;
-    line-height: 1.9;
 
     @include breakpoint ('lg') {
         font-size: 14px;
+    }
+
+    @include breakpoint ('sm') {
+        font-size: 12px;
     }
 }
   
@@ -56,7 +59,7 @@ ul {
 img, svg, video {
     display: inline-block;
     vertical-align: top;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -91,14 +94,9 @@ legend {
     display: block;
 }
 
-// .logo {
-//     max-width: 150px;
-//     width: 100%;
-// }
-
 .container {
     width: 100%;
-    max-width: 1275px;
+    max-width: 1465px; // + 80px of paddings 
     margin: 0 auto; 
     padding: 0 80px;
 
@@ -109,11 +107,16 @@ legend {
 
         @include breakpoint ('lg') {
             flex-direction: column-reverse;
-            flex-wrap: wrap;
         }
     }
 
-    
+    @include breakpoint ('sm') {
+        padding: 0 20px;
+    }
+
+    @include breakpoint ('xxs') {
+        padding: 0 7px;
+    }
 }
 
 .flex-container {
@@ -125,13 +128,10 @@ legend {
         gap: 90px;
     }
 
-    @include breakpoint('xl') {
+    @include breakpoint ('xl') {
         gap: 25px;
-    }
-
-    @include breakpoint ('lg') {
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
     }
 }
 
@@ -143,9 +143,16 @@ legend {
     border-radius: 50px;
     transition: ease-in-out 0.3s;
 
+    &:hover {
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        color: var(--red);
+    }
+
     &_def {
         color: var(--red);
         border: 2px solid var(--red);
+
 
         &:hover {
             background-color: var(--red);
@@ -154,16 +161,9 @@ legend {
         }
     }
 
-    &:hover {
-        border: 1px solid var(--red);
-        border-radius: 50px;
-        color: var(--red);
-    }
-
     &:active {
         color: #7b2222;
         border: 1px solid #7b2222;
-
     }
 
     @include breakpoint ('lg') {
@@ -171,7 +171,6 @@ legend {
         padding: 6px 14px;
         margin: 0 auto;
     }
-
 }
 
 .bg-btn {
@@ -191,7 +190,11 @@ legend {
         border: 1px solid var(--red);
     }
 
-    
+    &:active {
+        color: #7b2222;
+        border-color: #7b2222;
+        background-color: var(--bg);
+    }
 }
 
 .link {
@@ -216,6 +219,10 @@ legend {
     @include breakpoint ('lg') {
         font-size: 24px;
         text-align: center;
+    }
+
+    @include breakpoint ('sm') {
+        font-size: 18px;
     }
 }
 
