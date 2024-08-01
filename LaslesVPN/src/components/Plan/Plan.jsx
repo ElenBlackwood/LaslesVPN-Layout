@@ -30,7 +30,7 @@ export default function Plan() {
                     <button className="btn btn_def">Select</button>
                 </div>
                 <div className="plan__select-plan">
-                    <div className="plan__img">s
+                    <div className="plan__img">
                         <img src={planImg} alt="plan image" />
                     </div>
                     <span className="plan__packname">Standard Plan</span>

@@ -12,6 +12,7 @@
 
     &__plans-holder {
         display: flex;
+        justify-content: center;
         gap: 50px;
 
         @include breakpoint ('xl') {
@@ -30,6 +31,7 @@
     &__select-plan {
         padding: 80px 70px 50px;
         display: grid;
+        grid-template-rows: auto auto 1fr auto auto;
         border: 2px solid #DDDDDD;
         border-radius: 10px;
         transition: ease-in-out 0.3s;
@@ -42,7 +44,7 @@
             padding: 50px 40px 25px;
         }
 
-        @include breakpoint ('sm') {
+        @include breakpoint ('md') {
             padding: 50px 80px;
         }
 
