@@ -9,6 +9,14 @@ body.no-scroll {
     margin-bottom: 100px;
     position: relative;
 
+    .flex-container {
+        @include breakpoint ('sm') {
+            gap: 25px;
+            flex-wrap:wrap;
+            justify-content: flex-start;
+        }
+    }
+
     .nav {
         @include breakpoint('md') {
             display: none;
